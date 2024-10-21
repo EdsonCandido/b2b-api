@@ -1,0 +1,9 @@
+services:
+  node:
+    image: "node:20-bullseye"
+    working_dir: /app
+    environment:
+      - NODE_ENV=${NODE_ENV}
+    ports:
+      - "8888:3000"
+    command: "npm start"
